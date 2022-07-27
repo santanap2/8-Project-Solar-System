@@ -1,3 +1,130 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  /* background-color: rgb(189, 189, 189); */
+  background-image: url(../src/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    0 0 50px 0 rgb(255, 255, 255, 0.3),
+    inset 0 -3em 3em rgba(255, 255, 255, 0.1);
+  /* border: 1px red solid; */
+  padding: 20px;
+  margin-bottom: 5px;
+  font-size: 32px;
   text-align: center;
+}
+
+.planets-div {
+  /* background-color: aliceblue; */
+  /* border: 1px red solid; */
+  padding: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.planets-title-div, .missions-title-div {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.planets-container {
+  /* background-color: aliceblue; */
+  /* border: 1px red solid; */
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.planet-card {
+  /* background-color: rgba(240, 248, 255, 0.050); */
+  /* border: 1px red solid; */
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.planet-image {
+  width: 200px;
+  transition: 0.2s ease-in-out;
+}
+
+.planet-image:hover {
+  transform: scale(1.75);
+}
+
+.planet-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.missions-div {
+  /* background-color: aliceblue; */
+  /* border: 1px red solid; */
+  padding: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.missions-container {
+  /* border: 1px red solid; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.missions-card {
+  background-color: rgba(240, 248, 255, 0.025);
+  padding: 20px;
+  margin: 20px;
+  /* border: 1px white solid; */
+  border-radius: 30px;
+  width:250px;
+  height: 160px;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 0 20px 0 rgb(255, 255, 255, 0.3),
+    inset 0 -3em 3em rgba(255, 255, 255, 0.1);
+  transition: all 0.2s;
+}
+
+.missions-card:hover {
+  transform:scale(1.2);
+}
+
+.mission-title {
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
 }
